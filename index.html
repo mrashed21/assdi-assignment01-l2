@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment</title>
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- font-awsemone cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-inter">
+    <!--start header section -->
+    <header>
+      <nav>
+        <!-- start sub nav bar -->
+        <div
+          class="flex justify-between p-2 bg-black tablet:pl-6 tablet:pr-6 laptop:pl-10 laptop:pr-10"
+        >
+          <div class="">
+            <i class="text-white pr-1 fa-solid fa-check"></i>
+            <span class="text-white">Free shipping on all orders over $50</span>
+          </div>
+          <div class="flex mobile:gap-5">
+            <select class="text-white bg-black">
+              <option value="english">En</option>
+              <option value="english">Bn</option>
+            </select>
+            <a class="text-white" href="#">Faqs</a>
+            <a href="#"
+              ><i class="text-white pl-1 fa-solid fa-circle-info"></i>
+              <span class="text-white">Need Help</span></a
+            >
+          </div>
+        </div>
+        <!-- end sub nav bar -->
+        <!-- start sub menu bar -->
+        <div
+          class="bg-[rgb(240,242,243)] mobile:p-2 flex justify-between tablet:pl-6 tablet:pr-6 laptop:pl-10 laptop:pr-10"
+        >
+          <div class="flex items-center gap-1">
+            <img class="mobile:w-6" src="./image/logo.svg" alt="logo" />
+            <span class="font-medium">Comforty</span>
+          </div>
+          <div class="mobile:hidden tablet:block">
+            <input
+              class="rounded-lg relative p-1 pl-2 pr-2 outline-none"
+              type="text"
+              placeholder="Search here..."
+            />
+            <i
+              class="absolute -translate-x-8 translate-y-2 text-[#272343] fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="">
+            <ul class="flex mobile:gap-4">
+              <li
+                class="flex items-center gap-2 pt-1 pb-1 pl-4 pr-4 bg-white rounded-md"
+              >
+                <a class="text-xl" href="#">
+                  <i class="fa-solid fa-cart-shopping"></i> <span>Cart</span>
+                </a>
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-white rounded-full bg-[#007580]"
+                >
+                  2
+                </div>
+              </li>
+              <li class="pt-1 pb-1 pl-4 pr-4 bg-white rounded-md">
+                <a class="text-xl" href="#"
+                  ><i class="fa-regular fa-heart"></i
+                ></a>
+              </li>
+              <li class="pt-1 pb-1 pl-4 pr-4 bg-white rounded-md">
+                <a class="text-xl" href="#"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end sub menu bar -->
+        <!--start  menu  section -->
+        <menu
+          class="flex items-center justify-between bg-white p-3 pl-2 pr-2 tablet:pl-6 tablet:pr-6 laptop:pl-10 laptop:pr-10"
+        >
+          <div class="flex tablet:gap-4 laptop:gap-6">
+            <li class="border border-stone-950 p-2 rounded-sm">
+              <a class="" href="#"
+                ><i class="fa-solid fa-bars"></i> All Categories</a
+              >
+            </li>
+            <ul class="flex items-center tablet:gap-4 laptop:gap-8">
+              <li class="mobile:hidden tablet:block">
+                <a class="" href="#">Home</a>
+              </li>
+              <li class="mobile:hidden tablet:block">
+                <a class="" href="#">Shop</a>
+              </li>
+              <li class="mobile:hidden tablet:block">
+                <a class="" href="#">Product</a>
+              </li>
+              <li class="mobile:hidden tablet:block">
+                <a class="" href="#">Pages</a>
+              </li>
+              <li class="mobile:hidden tablet:block">
+                <a class="" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <a href="tel:+18085550111">Contact: (808) 555-0111</a>
+          </div>
+        </menu>
+        <!--end  menu  section -->
+      </nav>
+      <!-- end nav section -->
+      <!-- start banner section -->
+      <section class="relative">
+        <div class="bg-[#F0F2F3]">
+          <div
+            class="flex justify-between items-center p-2 tablet:p-6 laptop:p-10 mobile:flex-col mobile:gap-8 mobile:pt-20 mobile:pb-10 tablet:flex-row"
+          >
+            <div class="flex tablet:gap-5 laptop:gap-9 items-center">
+              <div
+                class="w-7 h-7 shrink-0 rounded-full bg-white tablet:flex items-center justify-center text-[#007580] mobile:hidden tablet:block"
+              >
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </div>
+              <div class="">
+                <p class="text-[#272343] text-base">Welcome to chairy</p>
+                <h2
+                  class="text-4xl text-[#272343] tablet:text-5xl laptop:text-6xl font-bold"
+                >
+                  Best Furniture Collection for your interior.
+                </h2>
+                <button
+                  class="bg-[#029FAE] pt-2 pb-2 pl-4 pr-4 rounded-lg text-white font-semibold mt-3 tablet:mt-4 laptop:mt-6"
+                >
+                  Shop Now <i class="pl-1 fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="mobile:-order-1 relative tablet:order-1 flex items-center"
+            >
+              <div class="tablet:pr-10">
+                <img class="w-96" src="./image/chair.png" alt="image" />
+                <div
+                  class="absolute w-24 h-24 bg-white rounded-full mobile:-top-5 mobile:-right-5 laptop:right-0 flex items-center justify-center flex-col"
+                >
+                  <p class="text-[#F05C52] text-lg font-bold">54%</p>
+                  <p>Discount</p>
+                </div>
+              </div>
+              <div
+                class="w-7 h-7 shrink-0 rounded-full bg-white tablet:flex items-center justify-center text-[#007580] mobile:hidden tablet:block"
+              >
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- circle -->
+          <div
+            class="tablet:flex items-center justify-center gap-2 pb-10 laptop:pb-14 mobile:hidden tablet:block"
+          >
+            <div class="w-2 h-2 rounded-full bg-[#9A9CAA]"></div>
+            <div class="w-2 h-2 rounded-full bg-[#272343]"></div>
+            <div class="w-2 h-2 rounded-full bg-[#9A9CAA]"></div>
+          </div>
+        </div>
+        <!-- feature -->
+        <div class=" flex mobile:flex-col items-center justify-center gap-8 mobile:mt-8  tablet:flex-row tablet:pl-6 tablet:pr-6 tablet:justify-between  tablet:flex-wrap laptop:ml-10 laptop:
+        mr-10 laptop:bg-white laptop:rounded-xl laptop:absolute laptop:-mt-8 laptop:pt-2 laptop:pb-2 laptop:pr-3 laptop:pl-3 laptop:flex-nowrap">
+          <div class="flex items-center gap-4">
+            <div class="">
+              <img class="laptop:w-10" src="./image/discount.svg" alt="logo" />
+            </div>
+            <div class="">
+              <h3 class="text-xl font-medium text-[#272343]">Discount</h3>
+              <p class="text-[#9A9CAA] text-base">Every week new sales</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="">
+              <img class="laptop:w-10"  src="./image/delivery.svg" alt="logo" />
+            </div>
+            <div class="">
+              <h3 class="text-xl font-medium text-[#272343]">Free Delivery</h3>
+              <p class="text-[#9A9CAA] text-base">100% Free for all orders</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="">
+              <img class="laptop:w-10" src="./image/support.svg" alt="logo" />
+            </div>
+            <div class="">
+              <h3 class="text-xl font-medium text-[#272343]">Great Support 24/7</h3>
+              <p class="text-[#9A9CAA] text-base">We care your experiences</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="">
+              <img class="laptop:w-10" src="./image/payment.svg" alt="logo" />
+            </div>
+            <div class="">
+              <h3 class="text-xl font-medium text-[#272343]">Secure Payment</h3>
+              <p class="text-[#9A9CAA] text-base">100% Secure Payment Method</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end banner section -->
+    </header>
+    <!--end header section -->
+  </body>
+</html>
